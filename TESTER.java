@@ -1,14 +1,13 @@
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.concurrent.ThreadLocalRandom;
 
-public class TESTER {
+public class Tester {
     public static void main(String[] args) {
-        String[] unsorted = {"1", "200", "150", "3"};
-        int[] num = new int[unsorted.length];
-        for (int i = 0; i < unsorted.length; i++) {
-            num[i] = Integer.parseInt(unsorted[i]);
+        ArrayList<Integer> arr = new ArrayList<>();
+        for(int i = 0; i < 100000; i++){
+            arr.add(99);
         }
-        Arrays.sort(num);
-        System.out.println(Arrays.toString(num));
+        System.out.println(arr);
     }
 }
